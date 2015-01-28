@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:fb="http://ogp.me/ns/fb#"> 
     <head>
         <title>Практический Бесплатный Вебинар по Android и Java программированию</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=1200, user-scalable=false">
-        <meta property="fb:admins" content="1510615147"/>
-        <meta property="fb:app_id" content="473200492729081"/>
-        <meta property="og:description" content="60 Минут Лучших Идей по Онлайн Бизнесу с Самого Престижного и Закрытого МастерМайнда в Доминиканской Республике."/>
-        <meta property="og:image" content="http://www.geniusmarketing.ru/pic.png" /> 
-
+        <meta property="fb:admins" content="100001475775424"/>
+        <meta property="fb:app_id" content="364360520417762"/>
 
         <link rel="stylesheet" href="css/boiler.css" type="text/css">
         <link rel="stylesheet" href="css/normalize.css" type="text/css">
@@ -25,14 +22,31 @@
     </head>
     <body>
         <div id="fb-root"></div>
-        <script src="http://connect.facebook.net/ru_RU/all.js"></script>
-        <script >
-            FB.init({
-                status: true,
-                cookie: true,
-                xfbml: true
-            });
+        <script>(function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id))
+                    return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "http://connect.facebook.net/ru_RU/sdk.js#xfbml=1&appId=364360520417762&version=v2.0";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    appId: '364360520417762',
+                    status: true,
+                    cookie: true,
+                    xfbml: true,
+                    version: 'v2.2'
+                });
+            };
         </script>
+        <!--<script src="http://connect.facebook.net/ru_RU/all.js"></script>-->
+        <!--        <script >
+                    FB.init({
+                    });
+                </script>-->
         <div class="main_head">
             <div style="text-align: center; padding-top: 50px;"><span style="background: #bc1212; padding: 1px 10px; color:#ffffff; font:700 19px/24px 'PT Sans', sans-serif;">Бесплатный Практический Вебинар по Android и Java программированию. 1 Февраля. 19:00 Киев/20:00 Москва</span></div>
 
@@ -81,12 +95,18 @@
                             <div id='soc3'>
 
                                 <center>
-                                    <div class="fb-like" data-href="http://geniusmarketing.me/7ideas/" data-width="120" data-layout="button_count" data-show-faces="true" data-send="false" style='top:4px;'></div>
-                                    <script type='text/javascript'>
-                                        FB.Event.subscribe('edge.create', function (href, widget) {
-                                            $("#form").css({'display': 'block'}).animate({"left": '210px'}, 500);
-                                        });
-                                    </script>
+                                    <!--                                    <div class="fb-like" data-href="http://geniusmarketing.me/7ideas/" data-width="120" data-layout="button_count" data-show-faces="true" data-send="false" style='top:4px;'></div>
+                                                                        <script type='text/javascript'>
+                                                                            FB.Event.subscribe('edge.create', function (href, widget) {
+                                                                                $("#form").css({'display': 'block'}).animate({"left": '210px'}, 500);
+                                                                            });
+                                                                        </script>-->
+                                    <div
+                                        class="fb-like"
+                                        data-share="true"
+                                        data-width="450"
+                                        data-show-faces="true">
+                                    </div>
                                 </center>
                             </div>
                             <div style='clear:both;'></div>
@@ -168,11 +188,25 @@
 
             <div class="the_wrapper" id="the_comments" style="padding-top: 0px;">
 
-                <div class="fb-comments" style="float: left; margin-top: 20px;" data-href="http://localhost:8383/" data-num-posts="10" data-width="470"></div>
+                <!--<div class="fb-comments" style="float: left; margin-top: 20px;" data-href="http://u-rise.com/" data-num-posts="10" data-width="470"></div>-->
+                <!--                <div id="fb-root"></div>
+                                <script>
+                                    (function (d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                        if (d.getElementById(id))
+                                            return;
+                                        js = d.createElement(s);
+                                        js.id = id;
+                                        js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&appId=364360520417762&version=v2.0";
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }(document, 'script', 'facebook-jssdk'));</script>-->
+
+                <div class="fb-comments" data-href="http://u-rise.com/" data-numposts="5" data-colorscheme="light"></div>
+                <!--<fb:comments href="http://u-rise.com/" width="400" numposts="5" colorscheme="light"></fb:comments>-->
                 <!-- Put this div tag to the place, where the Comments block will be -->
                 <div id="vk_comments" style="float:right; margin-top:22px;"></div>
                 <script type="text/javascript">
-                    VK.Widgets.Comments("vk_comments", {limit: 10, width: "470", attach: "*"});
+                                        VK.Widgets.Comments("vk_comments", {limit: 10, width: "470", attach: "*"});
                 </script>
                 <div style="clear:both; height: 40px;"></div>
 
