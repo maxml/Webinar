@@ -10,12 +10,25 @@
 
         <link rel="stylesheet" href="css/boiler.css" type="text/css">
         <link rel="stylesheet" href="css/normalize.css" type="text/css">
-        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/menu/icon.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+                <script src="js/html5shiv.js"></script>
+                <script src="js/respond.min.js"></script>
+        <![endif]-->
+
         <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Roboto+Slab&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
 
         <!-- Put this script tag to the <head> of your page -->
         <script type="text/javascript" src="http://vk.com/js/api/openapi.js"></script>
+        <script type="text/javascript" src="https://parse.com/downloads/javascript/parse-1.3.5.min.js"></script>
 
         <script type="text/javascript">
             VK.init({apiId: 4753117, onlyWidgets: true});
@@ -43,23 +56,12 @@
                 });
             };
         </script>
-        <!--<script src="http://connect.facebook.net/ru_RU/all.js"></script>-->
-        <!--        <script >
-                    FB.init({
-                    });
-                </script>-->
         <div class="main_head">
             <div style="text-align: center; padding-top: 5px;"><span style="background: #bc1212; padding: 1px 10px; color:#ffffff; font:700 19px/24px 'PT Sans', sans-serif;">Бесплатный Практический Вебинар по Android и Java программированию. 1 Февраля. 19:00 Киев/20:00 Москва</span></div>
-            <div style="font-family: 'Roboto Slab', serif; text-align: center; margin: 50px auto; color: white; font-weight: bold; font-stretch: extra-expanded; font-size: 40px; line-height: 50px"><p>Как получить работу Android Junior Developer и начать зарабатывать 1000$ уже через 4 месяца?</p></div>
+            <div style="font-family: 'Roboto Slab', serif; text-align: center; margin: 170px auto; color: white; font-weight: bold; font-stretch: extra-expanded; font-size: 40px; line-height: 50px">
+                <p style="text-shadow: red 1px 0px, red 1px 1px, red 0px 1px, red -1px 1px, red -1px 0px, red -1px -1px, red 0px -1px, red 1px -1px, red 0 0 3px, red 0 0 3px, red 0 0 3px, red 0 0 3px, red 0 0 3px, red 0 0 3px, red 0 0 3px, red 0 0 3px;">Как получить работу Android Junior Developer <br>и начать зарабатывать 1000$ уже через 4 месяца?</p>
+            </div>
         </div>
-
-        <!--<div style="font-family: 'Roboto Slab', serif; text-align: center; margin: 50px auto; color: white; font-weight: bold; font-stretch: extra-expanded; font-size: 40px; line-height: 50px"><p>dkjlfb dskhb feskjrgf skjebf dfkjfbew rhbw erkjfhb ewkrbfh ewkrlb fewkljbr fkjewr kfewjbr gfkjlewb rgkljb ewrkjlgb ewklrbg wklejrb gkjlewbr gkjlewr klg ebwrgkjlbew rkl gbewkrjbg ewkljrbg kjwer gkjwegrkj web gkj;ew rgkj;b ewrkj;gn rkj;lgn erkj;bg er;lt gerj;lbtg kj;bg kj;rbtvkj;</p></div>-->
-        <!--</div>-->
-
-        <!--<div id="container">-->			
-
-
-
 
         <div id="conty">
             <div class="page_block">
@@ -68,7 +70,92 @@
                     <div style="text-align: center; font-size: 22px; color:#3f3f3f; line-height: 28px; margin: 25px 0 20px 0;">
 
                         <div id='video_div'>
-                            <iframe width="680" height="410" src="//www.youtube.com/embed/TOeJzO0qYqk?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+                            <!--<iframe width="680" height="410" src="//www.youtube.com/embed/TOeJzO0qYqk?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>-->
+                            <div class="services" id="service" >
+                                <div class="container" style="width: 960px; margin-top: 100px">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="single-service animate_fade_in" style="opacity: 1; right: 0px;">
+                                                <div class="row">
+                                                    <div class="col-xs-3 text-center half-gutter">
+                                                        <i class="icon icon-ecommerce-graph3"></i>
+                                                    </div>
+                                                    <div class="col-xs-9 half-gutter">
+                                                        <h4>Возможность удаленной работы</h4>
+                                                        <p>Выбрав профессию программиста-разработчика, Вы можете работать из любой точки мира по собственному графику.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="single-service animate_fade_in" style="opacity: 1; right: 0px;">
+                                                <div class="row">
+                                                    <div class="col-xs-3 text-center half-gutter">
+                                                        <i class="icon icon-basic-tablet"></i>
+                                                    </div>
+                                                    <div class="col-xs-9 half-gutter">
+                                                        <h4>Высокие зарплаты</h4>
+                                                        <p>Программисты - восстребованные специалисты с одними из самых высоких зарплат мире. Уровень заработной платы в среднем от 500 до 5000 баксов</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="single-service animate_fade_in" style="opacity: 1; right: 0px;">
+                                                <div class="row">
+                                                    <div class="col-xs-3 text-center half-gutter">
+                                                        <i class="icon icon-basic-rss"></i>
+                                                    </div>
+                                                    <div class="col-xs-9 half-gutter">
+                                                        <h4>Постоянное проф. развитие</h4>
+                                                        <p>Программисты - восстребованные специалисты с одними из самых высоких зарплат мире. Уровень заработной платы в среднем от 500 до 5000 баксов</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="single-service animate_fade_in" style="opacity: 1; right: 0px;">
+                                                <div class="row">
+                                                    <div class="col-xs-3 text-center half-gutter">
+                                                        <i class="icon icon-basic-share"></i>
+                                                    </div>
+                                                    <div class="col-xs-9 half-gutter">
+                                                        <h4>Гарантированное трудоустройство</h4>
+                                                        <p>Trouble completing the download ? Oren kjust want to say hi . Send us your mekis message in day .</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="single-service animate_fade_in" style="opacity: 1; right: 0px;">
+                                                <div class="row">
+                                                    <div class="col-xs-3 text-center half-gutter">
+                                                        <i class="icon icon-basic-settings"></i>
+                                                    </div>
+                                                    <div class="col-xs-9 half-gutter">
+                                                        <h4>Современная профессия</h4>
+                                                        <p>Trouble completing the download ? Oren kjust want to say hi . Send us your mekis message in day .</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="single-service animate_fade_in" style="opacity: 1; right: 0px;">
+                                                <div class="row">
+                                                    <div class="col-xs-3 text-center half-gutter">
+                                                        <i class="icon icon-basic-signs"></i>
+                                                    </div>
+                                                    <div class="col-xs-9 half-gutter">
+                                                        <h4>Развивающийся рынок труда</h4>
+                                                        <p>Trouble completing the download ? Oren kjust want to say hi . Send us your mekis message in day .</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
                         <div style="height: 10px;"></div>
@@ -85,34 +172,25 @@
                                 </div>
                                 <div id='soc2'>
                                     <!--<center>-->
-                                        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
-                                        <script>!function (d, s, id) {
-                                                var js, fjs = d.getElementsByTagName(s)[0];
-                                                if (!d.getElementById(id)) {
-                                                    js = d.createElement(s);
-                                                    js.id = id;
-                                                    js.src = "https://platform.twitter.com/widgets.js";
-                                                    fjs.parentNode.insertBefore(js, fjs);
-                                                }
-                                            }(document, "script", "twitter-wjs");</script>
-                                    <!--</center>-->
+                                    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+                                    <script>!function (d, s, id) {
+                                            var js, fjs = d.getElementsByTagName(s)[0];
+                                            if (!d.getElementById(id)) {
+                                                js = d.createElement(s);
+                                                js.id = id;
+                                                js.src = "https://platform.twitter.com/widgets.js";
+                                                fjs.parentNode.insertBefore(js, fjs);
+                                            }
+                                        }(document, "script", "twitter-wjs");</script>
                                 </div>
                                 <div id='soc3'>
 
-                                    <!--<center>-->
-                                        <!--                                    <div class="fb-like" data-href="http://geniusmarketing.me/7ideas/" data-width="120" data-layout="button_count" data-show-faces="true" data-send="false" style='top:4px;'></div>
-                                                                            <script type='text/javascript'>
-                                                                                FB.Event.subscribe('edge.create', function (href, widget) {
-                                                                                    $("#form").css({'display': 'block'}).animate({"left": '210px'}, 500);
-                                                                                });
-                                                                            </script>-->
-                                        <div
-                                            class="fb-like"
-                                            data-share="true"
-                                            data-width="250"
-                                            data-show-faces="true">
-                                        </div>
-                                    <!--</center>-->
+                                    <div
+                                        class="fb-like"
+                                        data-share="true"
+                                        data-width="250"
+                                        data-show-faces="true">
+                                    </div>
                                 </div>
                                 <div style='clear:both;'></div>
                             </div>
@@ -128,14 +206,10 @@
                     <div style="padding-top: 65px; padding-left: 172px;">На предстоящем вебинаре Вы узнаете основы програмирования и сможете за один день проверить, станете ли Вы программистом! Так же мы пошагово рассмотрим что нужно сделать, чтобы уже через 4 месяца Вы могли начать зарабатывать 1000$, сэкономив 3 года обучения в университете.</div>
                 </div>
             </div>
-
-
-
-
             <div id="container">
                 <p style="padding-top: 40px; padding-bottom: 32px; padding-left: 10px; font-size: 22px;">Если вы это читаете, значит вам хочется изменений. <b>Для кого это нужно?</b></p>
 
-                <div style="background: url(img/free_img.png) 10px top no-repeat; padding-left: 330px; font-size: 18px; line-height: 28px; padding-right: 20px;"><p>- для  тех, кому надоела скучная, однообразная работа, </p>
+                <div style="background: url(img/spot.png) 10px top no-repeat; padding-left: 330px; font-size: 18px; line-height: 28px; padding-right: 20px;"><p>- для  тех, кому надоела скучная, однообразная работа, </p>
                     <p>- кто решил сменить бесперспективную профессию,</p>
                     <p>- кто хочет работать по гибкому графику или из дома,</p>
                     <p>- кто хочет на основе мобильного приложения создать стартап,</p>
@@ -145,14 +219,14 @@
                 <div style="text-align: center; font-weight: 700; font-size: 40px; color: #3f5149; padding-top: 50px;  line-height: 44px;">Этот бесплатный вебинар будет доступен только тем,<br /> кто сделает следующее:</div>
 
                 <div style="height: 20px;"></div>
-                <div style="background:url(img/first_punkt.png) 10px top no-repeat; height: 241px; padding-left: 110px;">
+                <div style="background:url(img/1.png) 10px top no-repeat; height: 241px; padding-left: 110px;">
                     <div style="font-size: 22px; font-weight: 700; padding-bottom: 32px; padding-top: 50px;">Напишите в комментариях внизу страницы слева и справа:</div>
 
                     <div style="font-size: 20px; line-height: 28px;">6 Февраля я буду смотреть бесплатный вебинар по Android и JAVA программированию. http://..............................</div>
 
                 </div>
 
-                <div style="background:url(img/second_img.png) 10px top no-repeat; height: 241px; padding-left: 110px;">
+                <div style="background:url(img/2.png) 10px top no-repeat; height: 241px; padding-left: 110px;">
                     <div style="padding-top: 75px; font-weight: 700; line-height: 28px;">Зарегистрируйтесь в форме ниже. Мы подтвердим Ваше участие и ссылку на<br />вебинар Вы получите непосредственно в день вебинара рано утром.</div>
 
                 </div>
@@ -165,13 +239,12 @@
 
             </div>
         </div>
-        <!--</div>-->
 
         <div style="background: #9f9691; height: 180px;">
             <div style="font-size: 20px; text-align: center; color: #fdfcfc; font-weight: 700; padding-top: 30px;">Введите ваше имя и основной e-mail в форму и нажмите кнопку “записаться”.</div>
 
             <div class="main_form">
-                <form target="_blank" accept-charset="utf-8" action="http://www.geniusm360.ru/add_contact_webform.html?u=jSt0" method="post">
+                <form name="myForm" accept-charset="utf-8" action="" method="get">
                     <div class="input_margin">
                         <input class="wf-input" type="text" name="name" placeholder="Ваше имя" required>
                     </div>
@@ -179,62 +252,58 @@
                         <input class="wf-input wf-req wf-valid__email" type="text" name="email" placeholder="Ваш e-mail" required>
                     </div>
                     <div class="input_margin" style="padding-right:0;">
-                        <input type="hidden" name="webform_id" value="3000314">
-                        <input type="submit" class="wf-button" name="submit" value="Хочу получить">
+                        <!--<input type="hidden" name="webform_id" value="3000314">-->
+                        <input type="button" class="wf-button" onClick="send(this.form)" value="Хочу получить">
                     </div>
                     <div style="clear:both;"></div>
-                    <script type="text/javascript" src="http://www.geniusm360.ru/view_webform.js"></script>
+                    <!--<script type="text/javascript" src="http://www.geniusm360.ru/view_webform.js"></script>-->
                 </form>
             </div>
 
+            <script type="text/javascript">
+                var send = function (form) {
+                    Parse.initialize("ARsUKojo6UIrzsZ4ZouKfaYCNIgII0CltbAVLCGC", "WFPGBFt0t7nwn58PcvPixCW4DcTzxstg4wpnwz1p");
+
+                    var user = new Parse.User();
+                    user.set("username", form.name.value);
+                    user.set("password", "my pass");
+                    user.set("email", form.email.value);
+
+//                                            user.set("phone", "415-392-0202");
+
+                    user.signUp(null, {
+                        success: function (user) {
+                            // Hooray! Let them use the app now.
+                            alert(123);
+                        },
+                        error: function (user, error) {
+                            // Show the error message somewhere and let the user try again.
+                            alert("Error: " + error.code + " " + error.message);
+                        }
+                    });
+                }
+            </script>
         </div>
         <div style="background: #fff;">
 
             <div style="text-align: center; padding-top: 55px; padding-bottom: 30px;">Вы ведь помните, что нужно оставить комментарии?</div>
 
             <div style="background: url(img/comments.png) center top no-repeat; height: 137px; font-size: 18px; line-height: 28px; width: 620px; margin: 0 auto;">
-
                 <div style="padding-top: 10px; padding-left: 70px; padding-right: 70px;">6 Февраля я буду смотреть бесплатный вебинар по Android и JAVA программированию. http://..............................</div>
-
             </div> 
 
-
-
             <div class="the_wrapper" id="the_comments" style="padding-top: 0px;">
-
-                <!--<div class="fb-comments" style="float: left; margin-top: 20px;" data-href="http://u-rise.com/" data-num-posts="10" data-width="470"></div>-->
-                <!--                <div id="fb-root"></div>
-                                <script>
-                                    (function (d, s, id) {
-                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                        if (d.getElementById(id))
-                                            return;
-                                        js = d.createElement(s);
-                                        js.id = id;
-                                        js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&appId=364360520417762&version=v2.0";
-                                        fjs.parentNode.insertBefore(js, fjs);
-                                    }(document, 'script', 'facebook-jssdk'));</script>-->
 
                 <div style="float: left;  margin-left: -5px">
                     <div class="fb-comments" data-href="http://u-rise.com/" data-width="450" data-numposts="5" data-colorscheme="light"></div>
                 </div>
-                <!--<fb:comments href="http://u-rise.com/" width="400" numposts="5" colorscheme="light"></fb:comments>-->
-                <!-- Put this div tag to the place, where the Comments block will be -->
                 <div style="float: right; margin-right: -35px">
                     <div id="vk_comments"></div>
                 </div>
                 <script type="text/javascript">
-                                            VK.Widgets.Comments("vk_comments", {limit: 10, width: "450", attach: "*"});
+                    VK.Widgets.Comments("vk_comments", {limit: 10, width: "450", attach: "*"});
                 </script>
-                <!--<div style="clear:both; height: 40px;"></div>-->
-
             </div>
-
         </div>
-
-
-
-
-
     </body>
 </html>
